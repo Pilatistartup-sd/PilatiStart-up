@@ -420,6 +420,20 @@ section {
     max-width:500px;
 }
 
+/* GRID PASSO PER PASSO - RESPONSIVE */
+@media (max-width: 768px) {
+    .grid-passi {
+        grid-template-columns: 1fr; /* una colonna su mobile */
+        gap: 30px; /* riduce lo spazio tra le card */
+        padding: 0 10px;
+    }
+
+    .card5-central {
+        grid-column: auto; /* la card centrale prende 1 colonna */
+        max-width: 100%;
+    }
+}
+
 /* ==================== SERVIZI (CARD FLUTTUANTI) ==================== */
 .servizi {
     display: flex;
